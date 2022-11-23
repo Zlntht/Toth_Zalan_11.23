@@ -1,0 +1,3 @@
+nev=[]
+gyujtotavolsag=[]
+ar=[]
