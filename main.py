@@ -12,4 +12,4 @@ while valasztas!='0':
     elif valasztas=='3':
         pass
     elif valasztas=='4':
-        pass
+        objektivEladas()
