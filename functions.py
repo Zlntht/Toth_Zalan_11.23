@@ -56,3 +56,12 @@ def keresesAr():
         if alsohatar<=i and i<=felsohatar:
             print(f'\t{nev[i]} {gyujtotavolsag[i]}mm \n\t\tÁr: {ar[i]} Ft\n ')
     input('\nVissza a menübe...')
+
+def keresesGyujtotavolsag():
+    system('cls')
+    print('----OBJEKTÍV SZŰRÉS GYUJTÓTÁVOLSÁG ALAPJÁN-----\n')
+    érték=int(input('\tKérem adja meg az értéket: '))
+    for i in ar:
+        if érték==i:
+            print(f'\t{nev[i]} {gyujtotavolsag[i]}mm \n\t\tÁr: {ar[i]} Ft\n ')
+    input('\nVissza a menübe...')
