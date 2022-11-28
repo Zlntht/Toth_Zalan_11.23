@@ -46,3 +46,13 @@ def objektivFelvetele(nev,gyujtotavolsag,ar):
     file=open('objektivek.csv','a',encoding='utf-8')
     file.write(f'\n{nev};{gyujtotavolsag};{ar}')
     file.close()
+
+def keresesAr():
+    system('cls')
+    print('---------OBJEKTÍV SZŰRÉS ÁR ALAPJÁN----------\n')
+    alsohatar=int(input('\tKérem adja meg az alsó határt: '))
+    felsohatar=int(input('\tKérem adja meg az felső határt: '))
+    for i in ar:
+        if alsohatar<=i and i<=felsohatar:
+            print(f'\t{nev[i]} {gyujtotavolsag[i]}mm \n\t\tÁr: {ar[i]} Ft\n ')
+    input('\nVissza a menübe...')

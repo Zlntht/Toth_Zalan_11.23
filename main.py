@@ -8,7 +8,7 @@ while valasztas!='0':
     if valasztas=='1':
         loadObjektivek()
     elif valasztas=='2':
-        pass
+        keresesAr()
     elif valasztas=='3':
         pass
     elif valasztas=='4':
