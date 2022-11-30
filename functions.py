@@ -51,9 +51,10 @@ def keresesAr():
     system('cls')
     print('---------OBJEKTÍV SZŰRÉS ÁR ALAPJÁN----------\n')
     alsohatar=int(input('\tKérem adja meg az alsó határt: '))
-    felsohatar=int(input('\tKérem adja meg az felső határt: '))
-    for i in ar:
-        if alsohatar<=i and i<=felsohatar:
+    felsohatar=int(input('\tKérem adja meg a felső határt: '))
+    print('\n')
+    for i in range(len(ar)):
+        if alsohatar<=ar[i] and felsohatar>=ar[i]:
             print(f'\t{nev[i]} {gyujtotavolsag[i]}mm \n\t\tÁr: {ar[i]} Ft\n ')
     input('\nVissza a menübe...')
 
@@ -61,7 +62,7 @@ def keresesGyujtotavolsag():
     system('cls')
     print('----OBJEKTÍV SZŰRÉS GYUJTÓTÁVOLSÁG ALAPJÁN-----\n')
     érték=int(input('\tKérem adja meg az értéket: '))
-    for i in ar:
-        if érték==i:
+    for i in range(len(gyujtotavolsag)):
+        if gyujtotavolsag[i]==érték:
             print(f'\t{nev[i]} {gyujtotavolsag[i]}mm \n\t\tÁr: {ar[i]} Ft\n ')
     input('\nVissza a menübe...')
